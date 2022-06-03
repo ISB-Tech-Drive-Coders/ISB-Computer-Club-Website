@@ -92,7 +92,6 @@
         align-items: center;
         justify-content: space-between;
         padding: 0 0.4rem;
-        position: fixed;
         width: calc(100% - 0.8rem);
 
         .name {

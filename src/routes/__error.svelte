@@ -13,6 +13,6 @@
 </script>
 
 <svelte:head>
-    <title>Error: {title}</title>
+    <title>Error {title.split(":").shift()}</title>
     <meta name="description" content="Svelte demo app" />
 </svelte:head>
