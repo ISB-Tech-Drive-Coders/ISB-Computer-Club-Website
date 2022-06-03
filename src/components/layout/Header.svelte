@@ -1,6 +1,6 @@
 <script lang="ts">
+    import { base } from "$app/paths";
     import { page } from "$app/stores";
-
     import { onMount } from "svelte";
     import FaBars from "svelte-icons/fa/FaBars.svelte";
     import FaComment from "svelte-icons/fa/FaComment.svelte";
@@ -26,48 +26,52 @@
 </script>
 
 <div class="header">
-    <a href="/" class="name">ISB Computer Club</a>
+    <a href={base} class="name">ISB Computer Club</a>
     <div class="pages">
-        <a href="/" class="page" class:active={$page.url.pathname == "/"}>
+        <a
+            href={base}
+            class="page"
+            class:active={$page.url.pathname == `${base}`}
+        >
             <FaHome />
             &nbsp;&nbsp;Home
         </a>
         <a
-            href="/about"
+            href="{base}/about"
             class="page"
-            class:active={$page.url.pathname == "/about"}
+            class:active={$page.url.pathname == `${base}/about`}
         >
             <FaUserCircle />
             &nbsp;&nbsp;About
         </a>
         <a
-            href="/blog"
+            href="{base}/blog"
             class="page"
-            class:active={$page.url.pathname == "/blog"}
+            class:active={$page.url.pathname == `${base}/blog`}
         >
             <FaComment />
             &nbsp;&nbsp;Blog
         </a>
         <a
-            href="/contact"
+            href="{base}/contact"
             class="page"
-            class:active={$page.url.pathname == "/contact"}
+            class:active={$page.url.pathname == `${base}/contact`}
         >
             <FaEnvelope />
             &nbsp;&nbsp;Contact
         </a>
         <a
-            href="/techdrive"
+            href="{base}/techdrive"
             class="page"
-            class:active={$page.url.pathname == "/techdrive"}
+            class:active={$page.url.pathname == `${base}/techdrive`}
         >
             <FaShoppingCart />
             &nbsp;&nbsp;Tech&nbsp;Drive
         </a>
         <a
-            href="/game"
+            href="{base}/game"
             class="page"
-            class:active={$page.url.pathname == "/game"}
+            class:active={$page.url.pathname == `${base}/game`}
         >
             <FaGamepad />
             &nbsp;&nbsp;Game
@@ -79,54 +83,54 @@
     <div class="mobile-menu" class:open={isMobileMenuOpen}>
         <div class="pages">
             <a
-                href="/"
+                href={base}
                 class="page"
-                class:active={$page.url.pathname == "/"}
+                class:active={$page.url.pathname == `${base}`}
                 on:click={toggleMobileMenu}
             >
                 <FaHome />
                 &nbsp;&nbsp;Home
             </a>
             <a
-                href="/about"
+                href="{base}/about"
                 class="page"
-                class:active={$page.url.pathname == "/about"}
+                class:active={$page.url.pathname == `${base}/about`}
                 on:click={toggleMobileMenu}
             >
                 <FaUserCircle />
                 &nbsp;&nbsp;About
             </a>
             <a
-                href="/blog"
+                href="{base}/blog"
                 class="page"
-                class:active={$page.url.pathname == "/blog"}
+                class:active={$page.url.pathname == `${base}/blog`}
                 on:click={toggleMobileMenu}
             >
                 <FaComment />
                 &nbsp;&nbsp;Blog
             </a>
             <a
-                href="/contact"
+                href="{base}/contact"
                 class="page"
-                class:active={$page.url.pathname == "/contact"}
+                class:active={$page.url.pathname == `${base}/contact`}
                 on:click={toggleMobileMenu}
             >
                 <FaEnvelope />
                 &nbsp;&nbsp;Contact
             </a>
             <a
-                href="/techdrive"
+                href="{base}/techdrive"
                 class="page"
-                class:active={$page.url.pathname == "/techdrive"}
+                class:active={$page.url.pathname == `/techdrive`}
                 on:click={toggleMobileMenu}
             >
                 <FaShoppingCart />
                 &nbsp;&nbsp;Tech&nbsp;Drive
             </a>
             <a
-                href="/game"
+                href="{base}/game"
                 class="page"
-                class:active={$page.url.pathname == "/game"}
+                class:active={$page.url.pathname == `${base}/game`}
                 on:click={toggleMobileMenu}
             >
                 <FaGamepad />

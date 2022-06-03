@@ -1,26 +1,27 @@
 <script context="module" lang="ts">
+    import { base } from "$app/paths";
     import ImageCarousel from "$elements/ImageCarousel.svelte";
 
     export const prerender = true;
 
     const ravImages = [
         {
-            src: "/images/Rav_01.jpg",
+            src: `${base}/images/Rav_01.jpg`,
             alt: "Ravinder Olivier Singh Dadiala (01)",
             format: "jpg",
         },
         {
-            src: "/images/Rav_02.jpg",
+            src: `${base}/images/Rav_02.jpg`,
             alt: "Ravinder Olivier Singh Dadiala (02)",
             format: "jpg",
         },
         {
-            src: "/images/Rav_03.jpg",
+            src: `${base}/images/Rav_03.jpg`,
             alt: "Ravinder Olivier Singh Dadiala (03)",
             format: "jpg",
         },
         {
-            src: "/images/Rav_04.jpg",
+            src: `${base}/images/Rav_04.jpg`,
             alt: "Ravinder Olivier Singh Dadiala (04)",
             format: "jpg",
         },
@@ -28,12 +29,12 @@
 
     const zoyaImages = [
         {
-            src: "/images/Zoya_01.png",
+            src: `${base}/images/Zoya_01.png`,
             alt: "Zoya Ahmad (01)",
             format: "png",
         },
         {
-            src: "/images/Zoya_02.png",
+            src: `${base}/images/Zoya_02.png`,
             alt: "Zoya Ahmad (02)",
             format: "png",
         },
@@ -41,17 +42,17 @@
 
     const milosImages = [
         {
-            src: "/images/Milos_01.png",
+            src: `${base}/images/Milos_01.png`,
             alt: "Milos Dmitrovic (01)",
             format: "png",
         },
         {
-            src: "/images/Milos_02.jpg",
+            src: `${base}/images/Milos_02.jpg`,
             alt: "Milos Dmitrovic (02)",
             format: "jpg",
         },
         {
-            src: "/images/Milos_03.png",
+            src: `${base}/images/Milos_03.png`,
             alt: "Milos Dmitrovic (03)",
             format: "png",
         },
@@ -59,12 +60,12 @@
 
     const sofiaImages = [
         {
-            src: "/images/Sofia_01.png",
+            src: `${base}/images/Sofia_01.png`,
             alt: "Sofia Rosales-Vargas (01)",
             format: "png",
         },
         {
-            src: "/images/Sofia_02.png",
+            src: `${base}/images/Sofia_02.png`,
             alt: "Sofia Rosales-Vargas (02)",
             format: "png",
         },
@@ -72,12 +73,12 @@
 
     const samuelImages = [
         {
-            src: "/images/Samuel_01.jpg",
+            src: `${base}/images/Samuel_01.jpg`,
             alt: "Samuel Kim (01)",
             format: "jpg",
         },
         {
-            src: "/images/Samuel_02.png",
+            src: `${base}/images/Samuel_02.png`,
             alt: "Samuel Kim (02)",
             format: "png",
         },
@@ -85,7 +86,7 @@
 
     const leilaImages = [
         {
-            src: "/images/Unknown.png",
+            src: `${base}/images/Unknown.png`,
             alt: "Leila Dawson (01)",
             format: "png",
         },
@@ -93,7 +94,7 @@
 
     const yuvikaImages = [
         {
-            src: "/images/Unknown.png",
+            src: `${base}/images/Unknown.png`,
             alt: "Yuvika Vora (01)",
             format: "png",
         },
@@ -101,7 +102,7 @@
 
     const timsonImages = [
         {
-            src: "/images/Unknown.png",
+            src: `${base}/images/Unknown.png`,
             alt: "Timson Jharman Fordley the -5th (01)",
             format: "png",
         },
@@ -109,7 +110,7 @@
 
     const jacobImages = [
         {
-            src: "/images/Jacob_01.png",
+            src: `${base}/images/Jacob_01.png`,
             alt: "Jacob Sapoznikow (01)",
             format: "png",
         },

@@ -20,7 +20,10 @@ const config = {
         serviceWorker: {
             register: true,
         },
-        adapter: adapter(),
+        adapter: adapter({
+            pages: "build",
+            assets: "build",
+        }),
         methodOverride: {
             allowed: ["PATCH", "DELETE"],
         },
@@ -35,7 +38,7 @@ const config = {
             },
         },
         paths: {
-            // base: process.env.CI ? "/ISB-Computer-Club-Website" : "",
+            base: process.env.CI ? "/ISB-Computer-Club-Website" : "",
         },
     },
 };
