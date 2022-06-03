@@ -3,21 +3,30 @@
 
 <div class="footer">
     <div class="col">
-        <p>ISB Computer Club</p>
-        <p>&copy; 2022 (MIT License)</p>
+        <p><b>ISB Computer Club</b></p>
+        <p>&copy; 2021-22 <b>ISB Coding/Tech Clubs</b></p>
+        <p>
+            This website was created under the<br /><a
+                target="_blank"
+                class="alt"
+                href="https://opensource.org/licenses/MIT">MIT License</a
+            >.
+        </p>
     </div>
     <div class="col">
         <h4>Links</h4>
-        <a href="https://github.com/ISB-Tech-Drive-Coders">GitHub</a>
+        <a href="https://github.com/ISB-Tech-Drive-Coders" target="_blank"
+            >GitHub</a
+        >
         <a
             href="https://sites.google.com/bsd48.org/isb-tech-drive/isb-tech-drive-homepage"
-            >Old Website</a
+            target="_blank">Old Website</a
         >
         <a
             href="https://github.com/ISB-Tech-Drive-Coders/ISB-Computer-Club-Website"
-            >Source Code</a
+            target="_blank">Source Code</a
         >
-        <a href="mailto:ISBtechdrive@Hotmail.com">Contact Us</a>
+        <a href="mailto:ISBtechdrive@Hotmail.com" target="_blank">Contact Us</a>
     </div>
 </div>
 
@@ -39,7 +48,7 @@
             align-items: flex-start;
             justify-content: flex-start;
             height: 100%;
-            width: 15rem;
+            width: 20rem;
 
             p,
             a,
@@ -55,6 +64,10 @@
                 background-color: var(--color-background);
                 border-radius: 0.25rem;
                 transition: background-color 0.4s ease;
+
+                &.alt {
+                    margin: 0rem;
+                }
 
                 &:hover {
                     background-color: var(--color-background-hover);

@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { page } from "$app/stores";
+
     import { onMount } from "svelte";
     import FaBars from "svelte-icons/fa/FaBars.svelte";
     import FaComment from "svelte-icons/fa/FaComment.svelte";
@@ -26,27 +28,47 @@
 <div class="header">
     <a href="/" class="name">ISB Computer Club</a>
     <div class="pages">
-        <a href="/" class="page">
+        <a href="/" class="page" class:active={$page.url.pathname == "/"}>
             <FaHome />
             &nbsp;&nbsp;Home
         </a>
-        <a href="/about" class="page">
+        <a
+            href="/about"
+            class="page"
+            class:active={$page.url.pathname == "/about"}
+        >
             <FaUserCircle />
             &nbsp;&nbsp;About
         </a>
-        <a href="/blog" class="page">
+        <a
+            href="/blog"
+            class="page"
+            class:active={$page.url.pathname == "/blog"}
+        >
             <FaComment />
             &nbsp;&nbsp;Blog
         </a>
-        <a href="/contact" class="page">
+        <a
+            href="/contact"
+            class="page"
+            class:active={$page.url.pathname == "/contact"}
+        >
             <FaEnvelope />
             &nbsp;&nbsp;Contact
         </a>
-        <a href="/techdrive" class="page">
+        <a
+            href="/techdrive"
+            class="page"
+            class:active={$page.url.pathname == "/techdrive"}
+        >
             <FaShoppingCart />
             &nbsp;&nbsp;Tech&nbsp;Drive
         </a>
-        <a href="/game" class="page">
+        <a
+            href="/game"
+            class="page"
+            class:active={$page.url.pathname == "/game"}
+        >
             <FaGamepad />
             &nbsp;&nbsp;Game
         </a>
@@ -56,27 +78,57 @@
     </div>
     <div class="mobile-menu" class:open={isMobileMenuOpen}>
         <div class="pages">
-            <a href="/" class="page">
+            <a
+                href="/"
+                class="page"
+                class:active={$page.url.pathname == "/"}
+                on:click={toggleMobileMenu}
+            >
                 <FaHome />
                 &nbsp;&nbsp;Home
             </a>
-            <a href="/about" class="page">
+            <a
+                href="/about"
+                class="page"
+                class:active={$page.url.pathname == "/about"}
+                on:click={toggleMobileMenu}
+            >
                 <FaUserCircle />
                 &nbsp;&nbsp;About
             </a>
-            <a href="/blog" class="page">
+            <a
+                href="/blog"
+                class="page"
+                class:active={$page.url.pathname == "/blog"}
+                on:click={toggleMobileMenu}
+            >
                 <FaComment />
                 &nbsp;&nbsp;Blog
             </a>
-            <a href="/contact" class="page">
+            <a
+                href="/contact"
+                class="page"
+                class:active={$page.url.pathname == "/contact"}
+                on:click={toggleMobileMenu}
+            >
                 <FaEnvelope />
                 &nbsp;&nbsp;Contact
             </a>
-            <a href="/techdrive" class="page">
+            <a
+                href="/techdrive"
+                class="page"
+                class:active={$page.url.pathname == "/techdrive"}
+                on:click={toggleMobileMenu}
+            >
                 <FaShoppingCart />
                 &nbsp;&nbsp;Tech&nbsp;Drive
             </a>
-            <a href="/game" class="page">
+            <a
+                href="/game"
+                class="page"
+                class:active={$page.url.pathname == "/game"}
+                on:click={toggleMobileMenu}
+            >
                 <FaGamepad />
                 &nbsp;&nbsp;Game
             </a>
@@ -93,7 +145,6 @@
         justify-content: space-between;
         padding: 0 0.4rem;
         width: calc(100% - 0.8rem);
-
         .name {
             user-select: none;
             font-size: 1.1rem;
@@ -144,7 +195,7 @@
             width: 100%;
             height: calc(100% - 3rem);
             background-color: var(--color-background-secondary);
-            z-index: 1;
+            z-index: 100;
             transition: transform 0.4s ease;
             transform: translateY(100%);
 
@@ -180,6 +231,22 @@
                         margin-left: 1rem;
                     }
 
+                    &.active {
+                        background-color: var(--color-background-offset);
+
+                        &:hover {
+                            background-color: var(
+                                --color-background-offset-hover
+                            );
+                        }
+
+                        &:active {
+                            background-color: var(
+                                --color-background-offset-active
+                            );
+                        }
+                    }
+
                     &:hover {
                         background-color: var(--color-background-hover);
                     }
@@ -213,6 +280,17 @@
                 background-color: var(--color-background);
                 transition: background-color 0.4s ease;
 
+                &.active {
+                    background-color: var(--color-background-offset);
+
+                    &:hover {
+                        background-color: var(--color-background-offset-hover);
+                    }
+
+                    &:active {
+                        background-color: var(--color-background-offset-active);
+                    }
+                }
                 &:hover {
                     background-color: var(--color-background-hover);
                 }

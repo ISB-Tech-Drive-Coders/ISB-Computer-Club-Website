@@ -35,7 +35,7 @@ const config = {
             },
         },
         paths: {
-            base: process.env.CI ? "/ISB-Computer-Club-Website" : "",
+            // base: process.env.CI ? "/ISB-Computer-Club-Website" : "",
         },
     },
 };
