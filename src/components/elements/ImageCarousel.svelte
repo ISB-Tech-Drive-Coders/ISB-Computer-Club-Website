@@ -31,7 +31,7 @@
         alt={images[currentImage].alt}
         class="current-image"
     />
-    <div class="controls">
+    <div class="controls" class:hidden={images.length <= 1}>
         <button
             class="control-button"
             on:click={() => (currentImage = (currentImage + 1) % images.length)}
@@ -69,6 +69,10 @@
             padding: 1rem;
             background-color: transparent;
             border-radius: 0.5rem;
+
+            &.hidden {
+                display: none;
+            }
 
             .control-button {
                 width: 2rem;

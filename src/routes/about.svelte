@@ -231,8 +231,7 @@
 </section>
 
 <section class="person">
-    <ImageCarousel images={jacobImages} />
-    <div class="info">
+    <div class="info alt">
         <p class="name">Jacob Sapoznikow</p>
         <p class="role">
             <i><b>Chief Developer and Full-Stack engineer</b></i>
@@ -248,6 +247,7 @@
             drives, and make video games.
         </p>
     </div>
+    <ImageCarousel images={jacobImages} />
 </section>
 
 <h2>VIPs & Beta Testers</h2>
