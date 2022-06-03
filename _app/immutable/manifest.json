@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-83ce180b.js",
+    "file": "start-330d65c7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -8,12 +8,17 @@
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
-      ".svelte-kit/runtime/components/error.svelte",
-      "src/routes/index.svelte"
+      "src/routes/__error.svelte",
+      "src/routes/about.svelte",
+      "src/routes/blog.svelte",
+      "src/routes/contact.svelte",
+      "src/routes/game.svelte",
+      "src/routes/index.svelte",
+      "src/routes/techdrive.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-79b8c8cf.js",
+    "file": "pages/__layout.svelte-f86e1c54.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -24,9 +29,45 @@
       "assets/pages/__layout.svelte-22ff6d0f.css"
     ]
   },
-  ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-607a05fc.js",
-    "src": ".svelte-kit/runtime/components/error.svelte",
+  "src/routes/__error.svelte": {
+    "file": "pages/__error.svelte-64826fdb.js",
+    "src": "src/routes/__error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-b54ecff7.js"
+    ]
+  },
+  "src/routes/about.svelte": {
+    "file": "pages/about.svelte-94b05cfe.js",
+    "src": "src/routes/about.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-b54ecff7.js"
+    ]
+  },
+  "src/routes/blog.svelte": {
+    "file": "pages/blog.svelte-edb5936c.js",
+    "src": "src/routes/blog.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-b54ecff7.js"
+    ]
+  },
+  "src/routes/contact.svelte": {
+    "file": "pages/contact.svelte-0493a653.js",
+    "src": "src/routes/contact.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-b54ecff7.js"
+    ]
+  },
+  "src/routes/game.svelte": {
+    "file": "pages/game.svelte-55e4b3da.js",
+    "src": "src/routes/game.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -34,8 +75,17 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-09a5e027.js",
+    "file": "pages/index.svelte-5c26ffff.js",
     "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-b54ecff7.js"
+    ]
+  },
+  "src/routes/techdrive.svelte": {
+    "file": "pages/techdrive.svelte-4d304dd1.js",
+    "src": "src/routes/techdrive.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
