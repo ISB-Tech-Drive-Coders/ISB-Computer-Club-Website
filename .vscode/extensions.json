@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "svelte.svelte-vscode",
+        "ardenivanov.svelte-intellisense",
+        "pivaszbs.svelte-autoimport",
+        "rafaelmartinez.svelte-preview",
+        "melihaltintas.svelte-format",
+        "proverbialninja.svelte-extractor",
+        "ms-vscode.vscode-typescript-next",
+        "antfu.vite"
+    ]
+}
