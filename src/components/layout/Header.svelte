@@ -31,7 +31,8 @@
         <a
             href="{base}/"
             class="page"
-            class:active={$page.url.pathname == `${base}/`}
+            class:active={$page.url.pathname == `${base}/` ||
+                $page.url.pathname == `${base}`}
         >
             <FaHome />
             &nbsp;&nbsp;Home
@@ -85,7 +86,8 @@
             <a
                 href="{base}/"
                 class="page"
-                class:active={$page.url.pathname == `${base}/`}
+                class:active={$page.url.pathname == `${base}/` ||
+                    $page.url.pathname == `${base}`}
                 on:click={toggleMobileMenu}
             >
                 <FaHome />
