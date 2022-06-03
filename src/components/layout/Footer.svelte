@@ -17,7 +17,7 @@
             href="https://github.com/ISB-Tech-Drive-Coders/ISB-Computer-Club-Website"
             >Source Code</a
         >
-        <a href="ISBtechdrive@Hotmail.com">Contact Us</a>
+        <a href="mailto:ISBtechdrive@Hotmail.com">Contact Us</a>
     </div>
 </div>
 

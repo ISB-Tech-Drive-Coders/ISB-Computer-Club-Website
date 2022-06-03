@@ -3,6 +3,6 @@
 </script>
 
 <svelte:head>
-    <title>Home</title>
-    <meta name="description" content="Home - ISB Computer Club" />
+    <title>Blog</title>
+    <meta name="description" content="Blog - ISB Computer Club" />
 </svelte:head>

@@ -11,7 +11,8 @@
         "check": "svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
         "lint": "prettier --check --plugin-search-dir=. . && eslint .",
-        "fmt": "prettier --write --plugin-search-dir=. ."
+        "fmt": "prettier --write --plugin-search-dir=. .",
+        "start": "serve -s build"
     },
     "devDependencies": {
         "@playwright/test": "^1.21.0",
@@ -30,6 +31,7 @@
         "prettier": "^2.5.1",
         "prettier-plugin-svelte": "^2.5.0",
         "sass": "^1.52.2",
+        "serve": "^13.0.2",
         "svelte": "^3.46.0",
         "svelte-check": "^2.2.6",
         "svelte-preprocess": "^4.10.1",

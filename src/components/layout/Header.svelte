@@ -1,12 +1,12 @@
 <script lang="ts">
-    import FaHome from "svelte-icons/fa/FaHome.svelte";
-    import FaUserCircle from "svelte-icons/fa/FaUserCircle.svelte";
+    import { onMount } from "svelte";
+    import FaBars from "svelte-icons/fa/FaBars.svelte";
     import FaComment from "svelte-icons/fa/FaComment.svelte";
     import FaEnvelope from "svelte-icons/fa/FaEnvelope.svelte";
-    import FaShoppingCart from "svelte-icons/fa/FaShoppingCart.svelte";
     import FaGamepad from "svelte-icons/fa/FaGamepad.svelte";
-    import FaBars from "svelte-icons/fa/FaBars.svelte";
-    import { onMount } from "svelte";
+    import FaHome from "svelte-icons/fa/FaHome.svelte";
+    import FaShoppingCart from "svelte-icons/fa/FaShoppingCart.svelte";
+    import FaUserCircle from "svelte-icons/fa/FaUserCircle.svelte";
 
     let isMobileMenuOpen = false;
 
