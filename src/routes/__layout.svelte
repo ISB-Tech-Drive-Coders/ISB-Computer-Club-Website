@@ -1,19 +1,17 @@
 <script lang="ts">
-    import "../app.css";
-    import "../app.scss";
     import Header from "$components/layout/Header.svelte";
     import Footer from "$layout/Footer.svelte";
     import "$styles/index.scss";
 </script>
 
 <div class="page">
-    <header />
+    <Header />
 
     <main>
         <slot />
     </main>
 
-    <footer />
+    <Footer />
 </div>
 
 <style lang="scss">

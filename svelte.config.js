@@ -1,23 +1,10 @@
-import { mdsvex } from "mdsvex";
-import mdsvexConfig from "./mdsvex.config.js";
 import adapter from "@sveltejs/adapter-static";
 import path from "path";
 import preprocess from "svelte-preprocess";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-    extensions: [".svelte", ...mdsvexConfig.extensions],
-
-    preprocess: [
-        preprocess({
-            scss: {
-                prependData: '@use "src/variables.scss" as *;',
-            },
-
-            postcss: true,
-        }),
-        mdsvex(mdsvexConfig),
-    ],
+    preprocess: preprocess(),
 
     kit: {
         alias: {
@@ -46,17 +33,9 @@ const config = {
                       }
                     : undefined,
             },
-
-            css: {
-                preprocessorOptions: {
-                    scss: {
-                        additionalData: '@use "src/variables.scss" as *;',
-                    },
-                },
-            },
         },
         paths: {
-            base: "/ISB-Computer-Club-Website",
+            base: process.env.CI ? "/ISB-Computer-Club-Website" : "",
         },
     },
 };
