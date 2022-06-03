@@ -36,11 +36,8 @@
     >
 
     <p>Or, you can use the form below:</p>
-    <form
-        action="mailto:ISBtechdrive@hotmail.com"
-        method="GET"
-        on:submit|preventDefault={handleSubmit}
-    >
+    <!-- We have to say the method is POST for accessibility. This allows autofill to work. -->
+    <form action="" method="POST" on:submit|preventDefault={handleSubmit}>
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" bind:value={name} />
         <label for="email">Email:</label>
@@ -108,10 +105,18 @@
                 margin-bottom: 1rem;
                 border: none;
                 width: calc(100% - 0.8rem);
+                color: var(--color-text);
+                outline: none;
 
-                &:hover {
+                &:focus {
                     background-color: var(--color-background-hover);
                 }
+            }
+
+            input:not([type="submit"]) {
+                height: 2rem;
+                color: var(--color-text) !important;
+                text-indent: 0.5rem;
             }
 
             input[type="submit"] {
