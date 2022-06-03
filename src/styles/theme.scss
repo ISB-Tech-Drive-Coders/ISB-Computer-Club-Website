@@ -1,0 +1,27 @@
+.common {
+    --font-stack: "Open Sans", sans-serif;
+}
+
+.dark-theme {
+    @extend .common;
+
+    --color-text: #ffffff;
+    --color-text-secondary: #cccccc;
+    --color-text-inverted: #1f2120;
+    --color-text-inverted-secondary: #2f3131;
+
+    --color-background: #2f3131;
+    --color-background-secondary: #3f4141;
+    --color-background-inverted: #ffffff;
+    --color-background-inverted-secondary: #fafafa;
+
+    --color-background-hover: #222222;
+    --color-background-hover-secondary: #333333;
+    --color-background-hover-inverted: #fafafa;
+    --color-background-hover-inverted-secondary: #fafafa;
+
+    --color-background-active: #000000;
+    --color-background-active-secondary: #111111;
+    --color-background-active-inverted: #fafafa;
+    --color-background-active-inverted-secondary: #fafafa;
+}

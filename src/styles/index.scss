@@ -1,0 +1,16 @@
+@import "./theme.scss";
+
+html,
+body {
+    @extend .dark-theme;
+
+    font-family: var(--font-stack);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
