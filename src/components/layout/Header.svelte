@@ -26,12 +26,12 @@
 </script>
 
 <div class="header">
-    <a href={base} class="name">ISB Computer Club</a>
+    <a href="{base}/" class="name">ISB Computer Club</a>
     <div class="pages">
         <a
-            href={base}
+            href="{base}/"
             class="page"
-            class:active={$page.url.pathname == `${base}`}
+            class:active={$page.url.pathname == `${base}/`}
         >
             <FaHome />
             &nbsp;&nbsp;Home
@@ -83,9 +83,9 @@
     <div class="mobile-menu" class:open={isMobileMenuOpen}>
         <div class="pages">
             <a
-                href={base}
+                href="{base}/"
                 class="page"
-                class:active={$page.url.pathname == `${base}`}
+                class:active={$page.url.pathname == `${base}/`}
                 on:click={toggleMobileMenu}
             >
                 <FaHome />
