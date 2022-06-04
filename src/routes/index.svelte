@@ -7,4 +7,7 @@
     <meta name="description" content="Home - ISB Computer Club" />
 </svelte:head>
 
-<div class="main">We are the ISB Computer Club. We are Groot.</div>
+<div class="main">
+    This website is still in development! Please be patient! It is not even near
+    done!
+</div>

@@ -64,7 +64,8 @@
         <a
             href="{base}/techdrive"
             class="page"
-            class:active={$page.url.pathname == `${base}/techdrive`}
+            class:active={$page.url.pathname == `${base}/techdrive` ||
+                $page.url.pathname.startsWith(`${base}/techdrive`)}
         >
             <FaShoppingCart />
             &nbsp;&nbsp;Tech&nbsp;Drive
@@ -123,7 +124,8 @@
             <a
                 href="{base}/techdrive"
                 class="page"
-                class:active={$page.url.pathname == `/techdrive`}
+                class:active={$page.url.pathname == `/techdrive` ||
+                    $page.url.pathname.startsWith(`${base}/techdrive`)}
                 on:click={toggleMobileMenu}
             >
                 <FaShoppingCart />
