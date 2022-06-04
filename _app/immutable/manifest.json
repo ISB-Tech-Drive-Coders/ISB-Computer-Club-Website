@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-6713bda0.js",
+    "file": "start-6d6e96a7.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -10,16 +10,19 @@
     "dynamicImports": [
       "src/routes/__layout.svelte",
       "src/routes/__error.svelte",
+      "src/routes/techdrive/__layout.svelte",
       "src/routes/about.svelte",
       "src/routes/blog.svelte",
       "src/routes/contact.svelte",
       "src/routes/game.svelte",
       "src/routes/index.svelte",
-      "src/routes/techdrive.svelte"
+      "src/routes/techdrive/donations.svelte",
+      "src/routes/techdrive/faq.svelte",
+      "src/routes/techdrive/index.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-2ed60153.js",
+    "file": "pages/__layout.svelte-67aea62b.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -39,6 +42,19 @@
     "isDynamicEntry": true,
     "imports": [
       "_index-b679d4ad.js"
+    ]
+  },
+  "src/routes/techdrive/__layout.svelte": {
+    "file": "pages/techdrive/__layout.svelte-316e1fb5.js",
+    "src": "src/routes/techdrive/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-b679d4ad.js",
+      "_paths-396f020f.js"
+    ],
+    "css": [
+      "assets/pages/techdrive/__layout.svelte-a893b2e3.css"
     ]
   },
   "src/routes/about.svelte": {
@@ -86,7 +102,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-5598aebd.js",
+    "file": "pages/index.svelte-94b98477.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -94,9 +110,9 @@
       "_index-b679d4ad.js"
     ]
   },
-  "src/routes/techdrive.svelte": {
-    "file": "pages/techdrive.svelte-b9d09902.js",
-    "src": "src/routes/techdrive.svelte",
+  "src/routes/techdrive/donations.svelte": {
+    "file": "pages/techdrive/donations.svelte-b6ea1c5d.js",
+    "src": "src/routes/techdrive/donations.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
@@ -104,7 +120,28 @@
       "_paths-396f020f.js"
     ],
     "css": [
-      "assets/pages/techdrive.svelte-637edf18.css"
+      "assets/pages/techdrive/donations.svelte-68b09d81.css"
+    ]
+  },
+  "src/routes/techdrive/faq.svelte": {
+    "file": "pages/techdrive/faq.svelte-b172fc86.js",
+    "src": "src/routes/techdrive/faq.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-b679d4ad.js"
+    ],
+    "css": [
+      "assets/pages/techdrive/faq.svelte-ca082505.css"
+    ]
+  },
+  "src/routes/techdrive/index.svelte": {
+    "file": "pages/techdrive/index.svelte-7d539864.js",
+    "src": "src/routes/techdrive/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-b679d4ad.js"
     ]
   },
   "_index-b679d4ad.js": {
