@@ -1,3 +1,7 @@
+<script lang="ts">
+    export const prerender = true;
+</script>
+
 <section id="about">
     <h2>What is the ISB tech drive?</h2>
 

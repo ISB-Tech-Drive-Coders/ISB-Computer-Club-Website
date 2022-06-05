@@ -29,6 +29,8 @@
     };
 
     $: result = handleSubmit(value);
+
+    export const prerender = true;
 </script>
 
 <section id="check">

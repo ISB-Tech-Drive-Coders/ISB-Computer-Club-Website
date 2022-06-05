@@ -2,8 +2,6 @@
     import { base } from "$app/paths";
     import { page } from "$app/stores";
     import "$styles/techdrive/layout.scss";
-
-    export const prerender = true;
 </script>
 
 <svelte:head>

@@ -26,6 +26,8 @@
             format: "png",
         },
     ];
+
+    export const prerender = true;
 </script>
 
 <section>

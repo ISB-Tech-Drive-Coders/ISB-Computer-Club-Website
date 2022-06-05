@@ -1,3 +1,7 @@
+<script lang="ts">
+    export const prerender = true;
+</script>
+
 <section id="faq">
     <h2>Frequently Asked Questions</h2>
 
