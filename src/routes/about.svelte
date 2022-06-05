@@ -282,7 +282,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        height: 34rem;
+        height: 28rem;
         width: calc(100% - 4rem);
         padding: 2rem;
         background-color: var(--color-background-secondary);
@@ -340,6 +340,7 @@
         .person {
             flex-direction: column;
             height: auto;
+            justify-content: flex-start;
 
             .info {
                 width: 100%;
@@ -348,6 +349,8 @@
 
                 &.alt {
                     margin-right: auto;
+                    margin-top: 0;
+                    margin-bottom: 1rem;
                 }
             }
         }

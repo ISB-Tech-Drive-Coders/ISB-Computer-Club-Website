@@ -1,0 +1,163 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    scroll-behavior: smooth;
+    height: 100%;
+
+    .sidebar {
+        width: calc(100% / 5);
+        background-color: var(--color-background-secondary);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        scroll-behavior: smooth;
+        height: 16.5rem;
+
+        a {
+            color: var(--color-text-primary);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            user-select: none;
+            background-color: var(--color-background);
+            transition: background-color 0.4s ease;
+
+            &.active {
+                background-color: var(--color-background-offset);
+
+                &:hover {
+                    background-color: var(
+                        --color-background-offset-hover
+                    );
+                }
+
+                &:active {
+                    background-color: var(
+                        --color-background-offset-active
+                    );
+                }
+            }
+
+            &:hover {
+                background-color: var(--color-background-hover);
+            }
+
+            &:active {
+                background-color: var(--color-background-active);
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            margin-bottom: 1rem;
+            width: calc(100% - 2rem);
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+}
+
+section {
+    padding: 1rem;
+    background-color: var(--color-background-secondary);
+    border-radius: 0.5rem;
+    width: calc((100% / 5) * 4);
+    height: calc(100% - 2rem);
+
+    @media screen and (max-width: 900px) {
+        width: calc(100% - 2rem);
+    }
+
+    &:not(:last-of-type) {
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    h4 {
+        margin-top: 0rem;
+        color: var(--color-text);
+    }
+
+    a {
+        color: var(--color-text);
+        text-decoration: underline;
+        font-weight: bold;
+        transition: color 0.4s ease;
+
+        &:hover {
+            color: var(--color-text-secondary);
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 2rem;
+        width: 100%;
+
+        @media screen and (max-width: 900px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 12rem;
+            padding: 1rem;
+            background-color: var(--color-background);
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.4s ease;
+
+            @media screen and (max-width: 900px) {
+                width: calc(100% - 2rem);
+            }
+
+            &:hover {
+                background-color: var(--color-background-hover);
+            }
+
+            .item {
+                width: 12rem;
+                height: 12rem;
+                object-fit: cover;
+                border-radius: 0.5rem;
+
+                @media screen and (max-width: 900px) {
+                    width: calc(100% - 0.5rem);
+                }
+            }
+
+            .name {
+                font-size: 1rem;
+                font-weight: bold;
+                margin-top: 0.5rem;
+                margin-bottom: 0;
+            }
+
+            .description {
+                font-size: 0.9rem;
+                margin-bottom: 0;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}

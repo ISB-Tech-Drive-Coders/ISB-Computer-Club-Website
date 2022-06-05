@@ -7,6 +7,8 @@
         "melihaltintas.svelte-format",
         "proverbialninja.svelte-extractor",
         "ms-vscode.vscode-typescript-next",
-        "antfu.vite"
+        "antfu.vite",
+        "github.copilot",
+        "GitHub.copilot-labs"
     ]
 }

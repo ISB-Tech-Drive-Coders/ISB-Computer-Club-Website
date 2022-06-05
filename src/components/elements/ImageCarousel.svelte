@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount } from "svelte";
-
     import FaChevronLeft from "svelte-icons/fa/FaChevronLeft.svelte";
     import FaChevronRight from "svelte-icons/fa/FaChevronRight.svelte";
 
@@ -15,6 +14,8 @@
     export let currentImage = 0;
     export let interval = 5000;
     export let auto = true;
+    export let width = "30";
+    export let height = "30";
 
     onMount(() => {
         if (auto) {
@@ -25,7 +26,7 @@
     });
 </script>
 
-<div class="carousel">
+<div class="carousel" style="width: {width}rem; height: {height}rem;">
     <img
         src={images[currentImage].src}
         alt={images[currentImage].alt}
@@ -49,9 +50,6 @@
 
 <style lang="scss">
     .carousel {
-        height: 30rem;
-        width: 30rem;
-
         .current-image {
             height: 100%;
             width: 100%;

@@ -17,7 +17,7 @@
         computers back for around a decade, and you can still use a 15-year-old
         machine nicely now. That makes old computers great for us. Those
         computers can help kids in need with their learning. Your old device
-        just needs a chance; <i><b>Give that chance to people in need!</b></i>
+        just needs a chance. <i><b>Give that chance to people in need!</b></i>
     </p>
 
     <h4>Q: What can I bring?</h4>
@@ -47,32 +47,31 @@
             target="_blank">ISBtechdrive@hotmail.com</a
         >
     </p>
+
+    <h4>Q: Who are you partnered with?</h4>
+
+    <p>
+        A: We are partnered with <u>Computers with Causes</u>. Go check them out
+        here:
+        <a href="https://www.computerswithcauses.org/" target="_blank"
+            >https://www.computerswithcauses.org/</a
+        >. Your donation helps the charitable programs we support, provides much
+        needed educational and vocational assets, and substantially increases
+        resources to support our communities. Donate a Computer and write it off
+        on your taxes! Business donors can deduct the underappreciated value of
+        the computer, and individuals can deduct the current market value of a
+        computer. Tax Deductions! We may be able to give you a tax receipt. We
+        take your tech and donate it to <u>Computers with Causes</u>. They, in
+        turn, will give the computer to people who are in need, such as
+        low-income students who need electronic devices for online school and
+        other purposes. If your tech is broken, as much as possible will be
+        salvaged, and then the rest will be recycled into new tech.
+        iCloud&trade; locked phones are 100% accepted! iCloud&trade; locked
+        phones are phones which you don't have a password for and don't have any
+        data you want on it, or phones that ask for a iCloud&trade; password.
+        Any password locked phones that don't let you use a new user profile. We
+        will send a activation request to Apple<small>&reg;</small>, with the
+        information of the phone we got. We may send you a email to remove it
+        from your iCloud&trade; account
+    </p>
 </section>
-
-<style lang="scss">
-    section {
-        padding: 1rem;
-        background-color: var(--color-background-secondary);
-        border-radius: 0.5rem;
-
-        &:not(:last-of-type) {
-            margin-bottom: 1rem;
-        }
-
-        h4 {
-            margin-top: 0rem;
-            color: var(--color-text);
-        }
-
-        a {
-            color: var(--color-text);
-            text-decoration: underline;
-            font-weight: bold;
-            transition: color 0.4s ease;
-
-            &:hover {
-                color: var(--color-text-secondary);
-            }
-        }
-    }
-</style>
